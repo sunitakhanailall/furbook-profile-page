@@ -1,68 +1,89 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# HTML to React Refactor
 
-## Available Scripts
+![profile](profile.png)
 
-In the project directory, you can run:
+## The Goal
+Looks like Furbook has really taken off in popularity among the world's pets! The only problem is, our website has been slow to scale and our valued pet users are complaining about how long it takes to load other pets profiles. As a result, we need to refactor the profile section of the website, which is written in plain HTML, into a React web page.
 
-### `npm start`
+## The Lab
+Clone this repository. In the terminal, run the following commands:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```HTML
+npm install
+npm start
+```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Once everything is installed and you have started up the website, check out how the website looks so far.
 
-### `npm test`
+Don't worry, the web page should be blank. There is nothing to show yet: this is just a boiler-plate. It is going to be your job to port the HTML that has already been written into this React project.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The original HTML and CSS files can be found in the folder labeled furbook-profile-page. Use this code to build the new-and-improved React version of this web page.
 
-### `npm run build`
+### The Navbar
+The first thing we will want to do is copy the navbar over to our React project. Copy the code for the navbar from the original website and place it inside of the file for the Navbar component (you can find it in the components folder).
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```html
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Furbook</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria- controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Post</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pet</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Find friends..." />
+      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Sniff</button>
+    </form>
+  </div>
+</nav>
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you have done this correctly, you should see a navbar pop up on the web page.
 
-### `npm run eject`
+### The Profile Picture
+The next step will be to move the profile picture box into our react project. Copy the code for the profile picture box and add it to the file for the picture box component.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+>If nothing happens after to have copied the code, don't forget to add the component to your app in the App.js file.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+It shouldn't look quite right, there is still some changes to be made. First, we need to add the css from the original style.css file to our React project.
+Copy and paste the css for the picture box into the css file associated with the picture box.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Second we need to change how we imported the profile image to the web page from the original site. Change the following line of code:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```HTML        
+<img src="./images/takota.png" class="pic" />
+```
 
-## Learn More
+to:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```HTML        
+<img src={pic} class="pic" />
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+We will discuss how to import pictures into a React project in the next lecture, but for now this should do the trick.
 
-### Code Splitting
+### The About Me Section
+While the file for the about me component has been created, there is very little code provided.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+You will need to create the actual function for the component, export it, and then import it into the App.js file.
 
-### Analyzing the Bundle Size
+Oh, and don't forget to copy the CSS from the original website as well.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Posting Section
+You are on your own now. You will need to create your own file for this component and complete the necessary steps to add the component to the web page.
 
-### Making a Progressive Web App
+Good luck!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Extension
+Create your own component for the profile page. Look for inspiration from other social media sites. Perhaps there should be a section for friends each pet has, or interest groups they have joined. It's up to you!
