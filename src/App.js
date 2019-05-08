@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from './components/navbar'
+import PetNav from './components/pet-nav'
 import PictureBox from './components/picture-box'
 import './App.css';
 
@@ -9,7 +9,7 @@ const App = () => {
   component.render = () => {
     return(
       <div className="App">
-        <Navbar/>
+        <PetNav/>
         <div class="container">
           <div class="row">
             //Add profile picture and about section here
@@ -22,7 +22,7 @@ const App = () => {
     )
   }
 
-  return component 
+  return component
 }
 
 export default App;

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-const Navbar = () => {
+const PetNav = () => {
     return (
-      <div className='Navbar'>
+      <div className='PetNav'>
 
       </div>
     );
 }
 
-export default Navbar;
+export default PetNav;

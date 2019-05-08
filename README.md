@@ -23,7 +23,7 @@ The original HTML and CSS files can be found in the folder labeled furbook-profi
 The first thing we will want to do is copy the navbar over to our React project. Copy the code for the navbar from the original website and place it inside of the file for the Navbar component (you can find it in the components folder).
 
 ```html
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="Navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Furbook</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria- controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
