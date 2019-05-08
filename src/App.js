@@ -3,9 +3,11 @@ import Navbar from './components/navbar'
 import PictureBox from './components/picture-box'
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
+const App = () => {
+  const component = new React.Component()
+
+  component.render = () => {
+    return(
       <div className="App">
         <Navbar/>
         <div class="container">
@@ -17,8 +19,10 @@ class App extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
+
+  return component 
 }
 
 export default App;
