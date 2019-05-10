@@ -5,7 +5,7 @@ import './css/picture-box.css'
 
 const PictureBox = () => {
     return (
-      <div>
+      <div className='PictureBox'>
 
       </div>
     );

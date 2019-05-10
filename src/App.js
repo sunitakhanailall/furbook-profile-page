@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Navbar from './components/navbar'
+import PetNav from './components/pet-nav'
 import PictureBox from './components/picture-box'
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
+const App = () => {
+  const component = new React.Component()
+
+  component.render = () => {
+    return(
       <div className="App">
-        <Navbar/>
+        <PetNav/>
         <div class="container">
           <div class="row">
             //Add profile picture and about section here
@@ -17,8 +19,10 @@ class App extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
+
+  return component
 }
 
 export default App;

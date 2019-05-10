@@ -19,11 +19,11 @@ Don't worry, the web page should be blank. There is nothing to show yet: this is
 
 The original HTML and CSS files can be found in the folder labeled furbook-profile-page. Use this code to build the new-and-improved React version of this web page.
 
-### The Navbar
+### 1. The Navbar
 The first thing we will want to do is copy the navbar over to our React project. Copy the code for the navbar from the original website and place it inside of the file for the Navbar component (you can find it in the components folder).
 
 ```html
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="Navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Furbook</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria- controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -51,7 +51,7 @@ The first thing we will want to do is copy the navbar over to our React project.
 
 If you have done this correctly, you should see a navbar pop up on the web page.
 
-### The Profile Picture
+### 2. The Profile Picture
 The next step will be to move the profile picture box into our react project. Copy the code for the profile picture box and add it to the file for the picture box component.
 
 >If nothing happens after to have copied the code, don't forget to add the component to your app in the App.js file.
@@ -73,14 +73,14 @@ to:
 
 We will discuss how to import pictures into a React project in the next lecture, but for now this should do the trick.
 
-### The About Me Section
+### 3. The About Me Section
 While the file for the about me component has been created, there is very little code provided.
 
 You will need to create the actual function for the component, export it, and then import it into the App.js file.
 
 Oh, and don't forget to copy the CSS from the original website as well.
 
-### Posting Section
+### 4. Posts Section
 You are on your own now. You will need to create your own file for this component and complete the necessary steps to add the component to the web page.
 
 Good luck!
