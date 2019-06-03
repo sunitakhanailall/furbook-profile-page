@@ -6,12 +6,17 @@
 Looks like Furbook has really taken off in popularity among the world's pets! The only problem is, our website has been slow to scale and our valued pet users are complaining about how long it takes to load other pets profiles. As a result, we need to refactor the profile section of the website, which is written in plain HTML, into a React web page.
 
 ## The Lab
-Clone this repository. In the terminal, run the following commands:
 
-```HTML
-npm install
-npm start
-```
+### Getting Started in CS50
+
+1. Clone this repository using `git clone`
+2. `cd` into the `html-to-react-refactor` folder
+3. `npm install`
+4. `npm start`
+5. If the app compiles with errors, to view the live app:
+    1. tap the `CS50 IDE` link in the header
+    2. Choose `Web Server`
+6. If the app fails to compile, re-clone the repository
 
 Once everything is installed and you have started up the website, check out how the website looks so far.
 
