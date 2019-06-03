@@ -13,10 +13,13 @@ Looks like Furbook has really taken off in popularity among the world's pets! Th
 2. `cd` into the `html-to-react-refactor` folder
 3. `npm install`
 4. `npm start`
-5. If the app compiles with errors, to view the live app:
+5. If the app compiles with no errors:
+    1. click on the `localhost` link, or
+    2. tap the `CS50 IDE` link in the header and choose `Web Server`
+6. If the app compiles with errors, to view the live app:
     1. tap the `CS50 IDE` link in the header
-    2. Choose `Web Server`
-6. If the app fails to compile, re-clone the repository
+    2. choose `Web Server`
+7. If the app fails to compile, re-clone the repository
 
 Once everything is installed and you have started up the website, check out how the website looks so far.
 
