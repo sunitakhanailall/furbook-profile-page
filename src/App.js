@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import PetNav from './components/pet-nav'
-import PictureBox from './components/picture-box'
+import PetNav from './components/pet-nav';
+import PictureBox from './components/picture-box';
+import AboutBox from './components/about-box';
+import Posts from './components/posts';
 import './App.css';
+
 
 const App = () => {
   const component = new React.Component()
@@ -12,10 +15,11 @@ const App = () => {
         <PetNav/>
         <div class="container">
           <div class="row">
-            //Add profile picture and about section here
+              <PictureBox/>
+              <AboutBox/>
           </div>
           <div class="row">
-            //Add posts here
+            <Posts/>
           </div>
         </div>
       </div>
